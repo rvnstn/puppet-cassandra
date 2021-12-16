@@ -33,8 +33,8 @@ define cassandra::schema::user (
     $quote = '"'
   }
 
-  if $::cassandrarelease != undef {
-    if versioncmp($::cassandrarelease, '2.2') < 0 {
+  if $facts['cassandrarelease'] {
+    if versioncmp($facts['cassandrarelease'], '2.2') < 0 {
       $operate_with_roles = false
     } else {
       $operate_with_roles = true
