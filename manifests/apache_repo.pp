@@ -58,7 +58,7 @@ class cassandra::apache_repo (
       if $pkg_url != undef {
         $location = $pkg_url
       } else {
-        $location = 'http://www.apache.org/dist/cassandra/debian'
+        $location = 'https://debian.cassandra.apache.org'
       }
 
       apt::source { 'cassandra.sources':
