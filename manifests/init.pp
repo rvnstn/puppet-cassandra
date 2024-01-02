@@ -326,11 +326,13 @@ class cassandra (
     $saved_caches_directory_settings = $settings
   }
 
-  $merged_settings = merge($baseline_settings, $settings,
-    $commitlog_directory_settings,
-    $data_file_directories_settings,
-    $hints_directory_settings,
-  $saved_caches_directory_settings)
+  $merged_settings = merge($baseline_settings, $settings)
+
+#  $merged_settings = merge($baseline_settings, $settings,
+#    $commitlog_directory_settings,
+#    $data_file_directories_settings,
+#    $hints_directory_settings,
+#  $saved_caches_directory_settings)
 
   if $manage_config_file {
     file { $config_file:
