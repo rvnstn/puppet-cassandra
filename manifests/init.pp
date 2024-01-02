@@ -326,7 +326,7 @@ class cassandra (
     $saved_caches_directory_settings = $settings
   }
 
-  $merged_settings = merge($baseline_settings, $settings)
+  $merged_settings = $settings
 
 #  $merged_settings = merge($baseline_settings, $settings,
 #    $commitlog_directory_settings,
