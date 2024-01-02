@@ -410,7 +410,7 @@ On the Debian family, this is passed as the `id`
 attribute to an `apt::key` resource.  On the Red Hat family, it is
 ignored.
 
-Default value: 'A26E528B271F19B9E5D8E19EA278B781FE4B2BDA'
+Default value: 'CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93'
 
 ##### `key_url`
 
