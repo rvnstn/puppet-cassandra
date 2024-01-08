@@ -26,7 +26,7 @@ describe 'cassandra::apache_repo' do
 
       is_expected.to contain_class('cassandra::apache_repo').only_with(
         'descr'   => 'Repo for Apache Cassandra',
-        'key_id'  => 'CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93',
+        'key_id'  => 'A26E528B271F19B9E5D8E19EA278B781FE4B2BDA',
         'key_url' => 'https://www.apache.org/dist/cassandra/KEYS',
         'release' => '311x'
       )
@@ -65,7 +65,7 @@ describe 'cassandra::apache_repo' do
       is_expected.to contain_class('apt::update')
 
       is_expected.to contain_apt__key('apache.cassandra').with(
-        id: 'CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93',
+        id: 'A26E528B271F19B9E5D8E19EA278B781FE4B2BDA',
         source: 'https://www.apache.org/dist/cassandra/KEYS'
       )
 

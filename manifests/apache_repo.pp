@@ -22,7 +22,7 @@
 #   (e.g. '311x')
 class cassandra::apache_repo (
   $descr   = 'Repo for Apache Cassandra',
-  $key_id  = 'CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93',
+  $key_id  = 'A26E528B271F19B9E5D8E19EA278B781FE4B2BDA',
   $key_url = 'https://www.apache.org/dist/cassandra/KEYS',
   $pkg_url = undef,
   $release = 'main',
