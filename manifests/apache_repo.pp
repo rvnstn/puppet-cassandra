@@ -50,7 +50,7 @@ class cassandra::apache_repo (
       include apt::update
 
       apt::key { 'apache.cassandra':
-        id     => $key_id,
+        # id     => $key_id,
         source => $key_url,
         before => Apt::Source['cassandra.sources'],
       }
